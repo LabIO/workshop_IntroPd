@@ -1,10 +1,10 @@
-#N canvas 140 175 668 539 10;
+#N canvas 553 156 668 539 10;
 #N canvas 0 50 450 250 (subpatch) 0;
-#X array fita 132300 float 2;
-#X coords 0 1 132300 -1 200 140 1;
+#X array fita 44100 float 2;
+#X coords 0 1 44100 -1 200 140 1;
 #X restore 270 44 graph;
 #X obj 93 109 tabwrite~ fita;
-#X msg 150 69 bang;
+#X msg 137 69 bang;
 #X obj 24 91 env~;
 #X obj 25 174 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
 #X obj 24 130 - 100;
@@ -31,7 +31,10 @@
 #X obj 502 95 * 44100;
 #X msg 502 134 \; fita resize \$1 \; sample_length \$1;
 #X text 500 16 escolhe o tamanho da table \; (duração da fita);
-#X obj 92 44 r~ out;
+#X obj 93 37 adc~;
+#X floatatom 243 269 5 0 0 0 - - -, f 5;
+#X obj 580 64 loadbang;
+#X msg 582 88 1;
 #X connect 2 0 1 0;
 #X connect 3 0 5 0;
 #X connect 5 0 4 0;
@@ -55,3 +58,5 @@
 #X connect 25 0 26 0;
 #X connect 28 0 1 0;
 #X connect 28 0 3 0;
+#X connect 30 0 31 0;
+#X connect 31 0 24 0;
