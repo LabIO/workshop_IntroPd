@@ -1,0 +1,92 @@
+#N canvas 393 67 468 345 10;
+#X obj 60 239 dac~;
+#X obj 72 196 KarPlux/KarSynth~;
+#X obj 160 38 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 250 31 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 75 41 r 2KP;
+#X text 242 13 blend;
+#X text 154 17 feedback;
+#N canvas 163 98 690 594 video 1;
+#X obj 92 68 gemwin;
+#X msg 92 18 create \, 1;
+#X msg 101 42 0 \, destroy;
+#X obj 247 37 gemhead;
+#X obj 248 309 rotateXYZ;
+#X obj 249 391 color 0 0.5 1;
+#X obj 277 79 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 290 108 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 302 133 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 271 217 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 283 249 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 296 280 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 46 128 r 2KP;
+#X obj 45 162 unpack f f;
+#X obj 32 205 ftom;
+#X obj 35 242 t f f;
+#X msg 32 303 text \$1;
+#X obj 118 257 mod 12;
+#X obj 118 279 / 12;
+#X msg 118 301 \$1 1 1;
+#X obj 118 323 hsv2rgb;
+#X obj 516 38 gemhead;
+#X obj 516 373 rectangle;
+#X floatatom 535 97 5 0 0 0 - - -, f 5;
+#X obj 105 191 / 127;
+#X obj 105 213 s Volume;
+#X obj 567 311 r Volume;
+#X obj 566 339 * 2;
+#X obj 600 76 r Volume;
+#X obj 599 104 * 2;
+#X floatatom 613 151 5 0 0 0 - - -, f 5;
+#X text 611 133 position;
+#X obj 250 437 text3d 0;
+#X obj 248 169 translateXYZ -2 0 0;
+#X obj 515 179 translateXYZ 2 0 0;
+#X obj 574 146 + -2;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 33 0;
+#X connect 4 0 5 0;
+#X connect 5 0 32 0;
+#X connect 6 0 33 1;
+#X connect 7 0 33 2;
+#X connect 8 0 33 3;
+#X connect 9 0 4 1;
+#X connect 10 0 4 2;
+#X connect 11 0 4 3;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 13 1 24 0;
+#X connect 14 0 15 0;
+#X connect 15 0 16 0;
+#X connect 15 1 17 0;
+#X connect 16 0 32 0;
+#X connect 17 0 18 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 5 1;
+#X connect 21 0 34 0;
+#X connect 23 0 34 1;
+#X connect 24 0 25 0;
+#X connect 26 0 27 0;
+#X connect 27 0 22 2;
+#X connect 28 0 29 0;
+#X connect 29 0 35 0;
+#X connect 30 0 35 1;
+#X connect 33 0 4 0;
+#X connect 34 0 22 0;
+#X connect 35 0 34 2;
+#X restore 364 35 pd video;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 1;
+#X connect 3 0 1 2;
+#X connect 4 0 1 0;

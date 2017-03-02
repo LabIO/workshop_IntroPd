@@ -1,0 +1,53 @@
+#N canvas 397 65 468 345 10;
+#X obj 60 239 dac~;
+#X obj 72 196 KarPlux/KarSynth~;
+#X obj 160 38 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 11900 1;
+#X obj 250 31 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 12700 1;
+#X obj 75 41 r 2KP;
+#X text 242 13 blend;
+#X text 154 17 feedback;
+#N canvas 165 102 431 589 video 1;
+#X obj 92 68 gemwin;
+#X msg 95 18 create \, 1;
+#X msg 101 42 0 \, destroy;
+#X obj 247 37 gemhead;
+#X obj 248 169 translateXYZ;
+#X obj 248 309 rotateXYZ;
+#X obj 248 446 color 0 0.5 1;
+#X obj 277 79 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 290 108 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 302 133 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 271 217 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 248 539 cube;
+#X obj 283 249 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 296 280 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X msg 99 416 draw line;
+#X msg 100 459 draw fill;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 11 0;
+#X connect 7 0 4 1;
+#X connect 8 0 4 2;
+#X connect 9 0 4 3;
+#X connect 10 0 5 1;
+#X connect 12 0 5 2;
+#X connect 13 0 5 3;
+#X connect 14 0 11 0;
+#X connect 15 0 11 0;
+#X restore 364 35 pd video;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 1;
+#X connect 3 0 1 2;
+#X connect 4 0 1 0;

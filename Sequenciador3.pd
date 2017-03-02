@@ -1,0 +1,62 @@
+#N canvas 236 56 577 473 10;
+#X obj 85 84 f;
+#X obj 117 85 + 1;
+#X obj 83 109 mod 4;
+#X obj 79 146 sel 0 1 2 3;
+#X obj 82 18 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+;
+#X obj 80 175 vsl 15 128 0 127 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 6500 1;
+#X floatatom 119 30 5 0 0 0 - - -, f 5;
+#X obj 32 182 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 100 176 vsl 15 128 0 127 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 8300 1;
+#X obj 124 180 vsl 15 128 0 127 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 6300 1;
+#X obj 146 181 vsl 15 128 0 127 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 9100 1;
+#X obj 120 342 mtof;
+#X obj 82 59 metro 100;
+#X floatatom 29 141 5 0 0 0 - - -, f 5;
+#X obj 114 423 dac~;
+#X floatatom 191 338 5 0 0 0 - - -, f 5;
+#X obj 121 369 pack f 100;
+#X obj 220 155 tabread volumes;
+#X obj 122 398 KarPlux/KarSynth~;
+#X obj 267 235 vsl 15 128 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 12400 1;
+#X obj 300 233 vsl 15 128 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 12600 1;
+#X text 237 202 sliders para modificar as propriedades do synth;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array volumes 4 float 3;
+#A 0 78.0137 39.914 84.3636 51.7068;
+#X coords 0 127 4 0 200 140 1 0 0;
+#X restore 339 36 graph;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 2 0 3 0;
+#X connect 2 0 13 0;
+#X connect 2 0 17 0;
+#X connect 3 0 5 0;
+#X connect 3 0 7 0;
+#X connect 3 1 8 0;
+#X connect 3 2 9 0;
+#X connect 3 3 10 0;
+#X connect 4 0 12 0;
+#X connect 5 0 11 0;
+#X connect 6 0 12 1;
+#X connect 8 0 11 0;
+#X connect 9 0 11 0;
+#X connect 10 0 11 0;
+#X connect 11 0 16 0;
+#X connect 12 0 0 0;
+#X connect 15 0 16 1;
+#X connect 16 0 18 0;
+#X connect 17 0 15 0;
+#X connect 18 0 14 0;
+#X connect 18 0 14 1;
+#X connect 19 0 18 1;
+#X connect 20 0 18 2;
