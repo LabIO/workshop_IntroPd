@@ -1,5 +1,5 @@
 # workshop_IntroPd
-Patches para introdução à programação visual em Pd
+Workshop de PROGRAMAÇÃO CRIATIVA 
 
 Conteúdos abordados:
 
@@ -9,8 +9,8 @@ Bases da programação visual/Audio. 10h30 - 12h00.<br>
       Objectos, mensagens, numeros, simbolos, comentários, etc…<br>
       Print ,Help, bang, counter, etc…<br>
      -Audio:<br>
-      Fazer um sequenciador e um oscilador<br>
-      Trocamos o oscilador por um mais complicado (Karplux, e *outro?)<br>
+      Fazer um sequenciador e um oscilador. <br>
+      Trocamos o oscilador por um mais complicado (Karplux, e *outro?). <br>
       Trocamos o Sequenciador por algum tipo de live input (rato; MIDI, GamePad, Microfone, Wiimote, etc…) objectos novos (hid, env~ notein, bonk~, sigmund~.<br>
      -Alunos criam patches para controlar o som.<br>
     
