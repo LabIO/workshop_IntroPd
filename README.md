@@ -4,7 +4,7 @@ Patches para introdução à programação visual em Pd
 Conteúdos abordados:
 
 Bases da programação visual/Audio. 10h30 - 12h00.
-    -Instalar Pd e Gem e outras libraries (?) baixar workshop do github.
+    -Instalar Pd e Gem e outras libraries (?) baixar workshop do github.<br>
     -Programação visual:
       Objectos, mensagens, numeros, simbolos, comentários, etc…
       Print ,Help, bang, counter, etc…
