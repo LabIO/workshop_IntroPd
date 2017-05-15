@@ -53,6 +53,9 @@ http://www.pkstonemusic.com/pd_code.html
 
 https://github.com/rjdj/rjlib
 
+http://www.chdh.net/egregore_source.php
+
+
 Vídeos:
 https://vimeo.com/204155167
 
