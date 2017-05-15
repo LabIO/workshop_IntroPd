@@ -3,21 +3,22 @@ Patches para introdução à programação visual em Pd
 
 Conteúdos abordados:
 
-Bases da programação visual. 10h30 -12h00.
-    Intro ao PD e instalar Pd e Gem e outras libraries (?) baixar workshop do github
-    Programação visual
-    Objectos, mensagens, numeros, simbolos, comentários, etc…
-    Print ,Help, bang, counter, etc…
-    Fazer um sequenciador e um oscilador
-    Trocamos o oscilador por um mais complicado (Karplux, e *outro?)
-    Trocamos o Sequenciador por algum tipo de live input (rato; MIDI, GamePad, Microfone, Wiimote, etc…) objectos novos (hid, env~ notein, bonk~, sigmund~, 
-    Alunos criam patches para controlar o som
-
-
-Desenhar e animar formas 2D/3D  12h - 13h30.
+Bases da programação visual/Audio. 10h30 - 12h00.
+    -Instalar Pd e Gem e outras libraries (?) baixar workshop do github.
+    -Programação visual:
+      Objectos, mensagens, numeros, simbolos, comentários, etc…
+      Print ,Help, bang, counter, etc…
+     -Audio:
+      Fazer um sequenciador e um oscilador
+      Trocamos o oscilador por um mais complicado (Karplux, e *outro?)
+      Trocamos o Sequenciador por algum tipo de live input (rato; MIDI, GamePad, Microfone, Wiimote, etc…) objectos novos (hid, env~ notein, bonk~, sigmund~.
+     -Alunos criam patches para controlar o som.
     
-    Introdução do GEM
-Criação um patch que gera vídeo com o mesmo input que o som.
+    intervalo
+
+Desenhar e animar formas 2D/3D  12h - 13h30.  
+ -Introdução do GEM.
+ -Criação um patch que gera vídeo com o mesmo input que o som.
 
     Almoço
 
