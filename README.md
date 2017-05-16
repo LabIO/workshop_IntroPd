@@ -4,7 +4,7 @@ Workshop de PROGRAMAÇÃO CRIATIVA
 Conteúdos abordados:
 
 Bases da programação visual/Audio. 10h30 - 12h00.<br>
-    -Instalar Pd e Gem e outras libraries (?) baixar workshop do github.<br>
+    -Instalar Pd e Gem e outras libraries (*) baixar workshop do github.<br>
     -Programação visual:<br>
       Objectos, mensagens, numeros, simbolos, comentários, etc…<br>
       Print ,Help, bang, counter, etc…<br>
@@ -34,6 +34,8 @@ Mostrar exemplos, youtube, etc 15h30 - 16h  (Se houver tempo) <br>
 Criação de aplicações pelos alunos. 16h - 18h30.    <br>
 
 ::::::::::::::::::::::::::::::::::::::::::
+
+* - Libraries a instalar: GEM, hid. <br> 
 
 Links:
 

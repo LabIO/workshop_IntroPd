@@ -1,10 +1,10 @@
-#N canvas 242 213 452 313 10;
+#N canvas 1 325 452 313 10;
 #X obj 64 221 dac~;
 #X obj 72 196 KarPlux/KarSynth~;
 #X obj 160 38 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12400 1;
-#X obj 250 31 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12700 1;
+-1 -1 12629 1;
+#X obj 250 31 vsl 15 128 0 1 0 1 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
 #X obj 75 41 r 2KP;
 #X text 242 13 blend;
 #X text 154 17 feedback;
