@@ -1,7 +1,8 @@
-#N canvas 444 55 774 649 10;
-#X obj 284 68 notein;
+#N canvas 446 54 774 649 10;
+#X obj 495 57 notein;
 #X text 307 13 outros controladores \, keyboard \, \; mouse \, MIDI
 \, som (bonk~ \, sigmund~);
+
 #N canvas 59 166 573 394 HID 0;
 #X obj 44 81 hid;
 #X msg 26 13 refresh;
