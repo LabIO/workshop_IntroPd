@@ -1,50 +1,53 @@
-#N canvas 397 65 468 345 10;
+#N canvas 772 123 468 345 10;
 #X obj 60 239 dac~;
 #X obj 72 196 KarPlux/KarSynth~;
-#X obj 160 38 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 11900 1;
-#X obj 250 31 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12700 1;
-#X obj 75 41 r 2KP;
-#X text 242 13 blend;
-#X text 154 17 feedback;
-#N canvas 165 102 431 589 video 1;
-#X obj 92 68 gemwin;
-#X msg 95 18 create \, 1;
-#X msg 101 42 0 \, destroy;
-#X obj 247 37 gemhead;
-#X obj 248 169 translateXYZ;
-#X obj 248 309 rotateXYZ;
-#X obj 248 446 color 0 0.5 1;
-#X obj 277 79 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 150 48 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 290 108 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 240 41 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 302 133 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X obj 271 217 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X obj 248 539 cube;
-#X obj 283 249 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X obj 296 280 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
-#X msg 99 416 draw line;
-#X msg 100 459 draw fill;
+#X obj 72 41 r 2KP;
+#X text 232 23 blend;
+#X text 144 27 feedback;
+#N canvas 227 310 436 582 video 1;
+#X obj 34 82 gemwin;
+#X msg 43 56 0 \, destroy;
+#X obj 158 107 gemhead;
+#X obj 158 219 translateXYZ;
+#X obj 158 341 rotateXYZ;
+#X obj 158 370 color 0 0.5 1;
+#X obj 188 135 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6400 1;
+#X obj 215 158 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6600 1;
+#X obj 242 183 hsl 128 15 -4 4 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6400 1;
+#X obj 181 249 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1300 1;
+#X obj 158 463 cube;
+#X obj 193 281 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 900 1;
+#X obj 206 312 hsl 128 15 0 360 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6000 1;
+#X msg 176 400 draw line;
+#X msg 183 429 draw fill;
+#X msg 34 32 lighting 1 \, create \, 1;
+#X obj 35 117 gemhead;
+#X obj 35 139 world_light;
 #X connect 1 0 0 0;
-#X connect 2 0 0 0;
+#X connect 2 0 3 0;
 #X connect 3 0 4 0;
 #X connect 4 0 5 0;
-#X connect 5 0 6 0;
-#X connect 6 0 11 0;
-#X connect 7 0 4 1;
-#X connect 8 0 4 2;
-#X connect 9 0 4 3;
-#X connect 10 0 5 1;
-#X connect 12 0 5 2;
-#X connect 13 0 5 3;
-#X connect 14 0 11 0;
-#X connect 15 0 11 0;
+#X connect 5 0 10 0;
+#X connect 6 0 3 1;
+#X connect 7 0 3 2;
+#X connect 8 0 3 3;
+#X connect 9 0 4 1;
+#X connect 11 0 4 2;
+#X connect 12 0 4 3;
+#X connect 13 0 10 0;
+#X connect 14 0 10 0;
+#X connect 15 0 0 0;
+#X connect 16 0 17 0;
 #X restore 364 35 pd video;
 #X connect 1 0 0 0;
 #X connect 1 0 0 1;
